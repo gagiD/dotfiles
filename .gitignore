@@ -1,9 +1,0 @@
-*
-
-**/node_modules/**
-
-.*/
-
-!.config/
-!.ssh/
-!bin/
