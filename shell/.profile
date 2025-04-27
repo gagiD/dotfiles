@@ -146,18 +146,29 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools         # apksigner, zipalign
 # surely this works
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 export FZF_DEFAULT_COMMAND="fd . $HOME"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
-alias tt='mkdir -p /tmp/test && cd /tmp/test'
 alias nvc='cd ~/.config/nvim/; nvim .'
+
 alias nnvim='~/.local/share/bob/nightly/nvim-linux64/bin/nvim'
 alias snvim='~/.local/share/bob/v0.10.0/nvim-linux64/bin/nvim'
 
 function gi() {
   curl -sL https://www.toptal.com/developers/gitignore/api/$@;
 }
+
+function tt() {
+  base="/tmp/test"
+  i=1
+  while [ -d "$base$i" ]; do
+    ((i++))
+  done
+  mkdir -p "$base$i" && cd "$base$i"
+}
+
+alias tt=tt
+
+eval $(thefuck --alias)
 

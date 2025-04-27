@@ -12,3 +12,5 @@ vim.g.snacks_scroll = false
 vim.opt.spell = false
 
 vim.opt.wrap = true
+
+vim.g.root_spec = { ".git", "lsp", { ".git", "lua" }, "cwd" }

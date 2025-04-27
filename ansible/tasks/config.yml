@@ -1,0 +1,5 @@
+---
+- name: stow dotfiles
+  ansible.builtin.shell:
+    cmd: "stow -d $HOME/dotfiles -t ~/ {{ item }}"
+  loop: "{{ stow }}"

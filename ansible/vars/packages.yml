@@ -1,0 +1,72 @@
+packages:
+  core:
+    - base
+    - base-devel
+    - linux
+    - linux-headers
+    - linux-firmware
+    - git
+    - stow
+    - ansible
+    - neovim
+    - emacs
+    - zsh
+    - htop
+
+  system:
+    - amd-ucode
+
+    # File
+    - ntfs-3g
+    - dosfstools
+    - mtpfs
+    - zip
+    - unzip
+    - unrar
+
+    # Network
+    - openssh
+    - wget
+    - bluez
+    - bluez-utils
+    - keychain
+    - pass
+
+    # Shell
+    - bat
+    - tree
+    - fzf
+    - ripgrep
+    - ripgrep-all
+    - jq
+    - man
+
+  desktop:
+    # Audio and video
+    - pipewire
+    - pipewire-alsa
+    - pipewire-pulse
+    - wireplumber
+    - yt-dlp
+
+    # Code
+    - visual-studio-code-bin
+
+    # KDE
+    - konsole
+
+  fonts:
+    - noto-fonts
+    - noto-fonts-extra
+    - noto-fonts-emoji
+    - ttf-droid
+    - ttf-dejavu
+    - ttf-font-awesome
+    - ttf-ubuntu-mono-nerd
+    - ttf-ubuntu-nerd
+
+  virtualization:
+    - podman
+    - docker
+    - docker-compose
+    - terraform

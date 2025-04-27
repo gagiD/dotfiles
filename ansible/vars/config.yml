@@ -1,0 +1,8 @@
+stow:
+  - bin
+  - emacs
+  - git
+  - neovim
+  - shell
+  - systemd
+  - xdg

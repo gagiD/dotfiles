@@ -1,0 +1,46 @@
+---
+- name: Upgrade system packages
+  become: true
+  community.general.pacman:
+    update_cache: yes
+    upgrade: yes
+
+- name: Install core packages
+  become: true
+  community.general.pacman:
+    name: "{{ item }}"
+    state: latest
+    update_cache: no
+  loop: "{{ packages.core }}"
+
+- name: Install system packages
+  become: true
+  community.general.pacman:
+    name: "{{ item }}"
+    state: latest
+    update_cache: no
+  loop: "{{ packages.system }}"
+
+- name: Install desktop packages
+  become: true
+  community.general.pacman:
+    name: "{{ item }}"
+    state: latest
+    update_cache: no
+  loop: "{{ packages.desktop }}"
+
+- name: Install fonts packages
+  become: true
+  community.general.pacman:
+    name: "{{ item }}"
+    state: latest
+    update_cache: no
+  loop: "{{ packages.fonts }}"
+
+- name: Install virtualization packages
+  become: true
+  community.general.pacman:
+    name: "{{ item }}"
+    state: latest
+    update_cache: no
+  loop: "{{ packages.virtualization }}"
