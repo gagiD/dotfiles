@@ -4,10 +4,8 @@
 	email = dino.gaguliceldin@gmail.com
 	name = gagiD
 [core]
-	editor = emacs -nw
+	editor = nvim
 [merge]
 	tool = meld
 [rerere]
 	enabled = 1
-[cola]
-	startupmode = folder
