@@ -81,7 +81,7 @@ alias gd='git diff'
 alias gcf='git config --list'
 alias gdct='git describe --tags $(git rev-list --tags --max-count=1)'
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
-
+alias gclean='git branch -d $(git branch --merged=master | grep -v master) && git fetch --prune'
 
 alias nipl='npm install --package-lock-only'
 
