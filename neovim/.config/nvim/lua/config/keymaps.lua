@@ -4,6 +4,16 @@
 
 local opts = { noremap = true, silent = true, desc = "which_key_ignore" }
 
+local allIgnore = { "n", "v", "x" }
+
+vim.keymap.set(allIgnore, "Q", "<nop>", opts)
+vim.keymap.set(allIgnore, "qq", "<nop>", opts)
+vim.keymap.set(allIgnore, "<F1>", "<nop>", opts)
+
+vim.keymap.set("n", "<F2>", "qq", opts)
+vim.keymap.set("n", "<F3>", "q", opts)
+vim.keymap.set("n", "<F4>", "@q", opts)
+
 vim.api.nvim_set_keymap("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>", opts)

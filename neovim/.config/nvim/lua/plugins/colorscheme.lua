@@ -1,7 +1,7 @@
-local colors = { "tokyonight", "catppuccin", "onedark" }
-
-math.randomseed(os.time())
-local chosen = colors[math.random(#colors)]
+-- local colors = { "tokyonight", "catppuccin", "onedark" }
+--
+-- math.randomseed(os.time())
+-- local chosen = colors[math.random(#colors)]
 
 return {
   {
@@ -11,7 +11,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = chosen,
+      colorscheme = "tokyonight",
     },
   },
 }

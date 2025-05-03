@@ -2,9 +2,28 @@ return {
   "joeveiga/ng.nvim",
   lazy = true,
   cond = function()
-    local cwd = vim.fn.getcwd()
-    local angular_json = cwd .. "/angular.json"
-    return vim.fn.filereadable(angular_json) == 1
+    local project_root = vim.fs.dirname(vim.fs.find("node_modules", { path = vim.fn.getcwd(), upward = true })[1])
+    if not project_root then
+      return false
+    end
+
+    local package_json = project_root .. "/package.json"
+    if not vim.uv.fs_stat(package_json) then
+      return false
+    end
+
+    local contents = io.open(package_json):read("*a")
+    local json = vim.json.decode(contents)
+    if not json.dependencies then
+      return false
+    end
+
+    local angular_core_version = json.dependencies["@angular/core"]
+    if not angular_core_version then
+      return false
+    end
+
+    return true
   end,
   keys = {
     {
