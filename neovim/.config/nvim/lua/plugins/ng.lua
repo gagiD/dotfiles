@@ -23,6 +23,9 @@ return {
       return false
     end
 
+    require("luasnip").filetype_extend("typescript", { "angular" })
+    require("luasnip").filetype_extend("html", { "angular" })
+
     return true
   end,
   keys = {

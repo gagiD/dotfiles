@@ -5,6 +5,13 @@ return {
     dependencies = {
       "davidmh/cspell.nvim",
     },
+    cond = function()
+      return false
+
+      -- local project_root = vim.fn.getcwd()
+      -- local cspell_path = project_root .. "/cspell.json"
+      -- return vim.fn.filereadable(cspell_path) == 1
+    end,
     opts = function(_, opts)
       local cspell = require("cspell")
 
