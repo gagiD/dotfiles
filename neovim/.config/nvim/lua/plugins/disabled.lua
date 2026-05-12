@@ -1,4 +1,4 @@
 return {
   -- disable flash
-  { "folke/flash.nvim", enabled = false },
+  -- { "folke/flash.nvim", enabled = false },
 }

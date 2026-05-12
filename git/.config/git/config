@@ -1,0 +1,83 @@
+[user]
+  name = gagiD
+  email = dino.gaguliceldin@gmail.com
+
+[core]
+  editor = nvim
+  preloadindex = true
+
+[credential]
+  helper = cache
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+
+[init]
+	defaultBranch = master
+
+[advice]
+  addEmptyPathspec = false
+  statusHints = false
+
+[blame]
+  coloring = highlightRecent
+  date = relative
+
+[diff]
+  context = 3
+  renames = copies
+  interHunkContext = 10
+  tool = nvimdiff
+[difftool]
+	prompt = false
+
+[log]
+  abbrevCommit = true
+  graphColors  = blue,yellow,cyan,magenta,green,red
+
+[status]
+  branch = true
+  short = true
+  showStash = true
+  showUntrackedFiles = all
+
+[pager]
+  branch = false
+  tag = false
+
+[checkout]
+	defaultRemote = origin
+
+[push]
+  autoSetupRemote = true
+  default = current
+  followTags = true
+  gpgSign = false
+
+[pull]
+  rebase = true
+  default = current
+
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+
+[submodule]
+  recurse = true
+  fetchJobs = 16
+
+[branch]
+  sort = -committerdate
+
+[tag]
+  sort = -taggerdate
+
+[merge]
+  tool = meld
+
+[rerere]
+	enabled = 1
+	autoupdate = 1
+
+

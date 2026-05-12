@@ -1,7 +1,7 @@
 #!/bin/sh
 # Profile file. Runs on login.
 
-export PATH="${PATH}:/home/gagi/bin:/home/gagi/.gem/ruby/2.7.0/bin:/usr/lib/jvm/default/bin:/home/gagi/.yarn/bin:/home/gagi/.local/bin:/home/gagi/.dotnet/tools:/home/gagi/.local/share/go/bin"
+export PATH="${PATH}:/home/gagi/bin:/home/gagi/.gem/ruby/2.7.0/bin:/usr/lib/jvm/default/bin:/home/gagi/.yarn/bin:/home/gagi/.local/bin:/home/gagi/.dotnet/tools:/home/gagi/.local/share/go/bin:/home/gagi/.local/share/cargo/bin"
 
 export EDITOR="emacs -nw"
 export TERMINAL="konsole"
@@ -60,6 +60,7 @@ alias gba='git branch --all'
 alias gbd='git branch --delete'
 alias gbD='git branch --delete --force'
 alias gbr='git branch --remote'
+alias gsw='git switch'
 alias gco='git checkout'
 alias gcb='git checkout -b'
 alias gcB='git checkout -B'
@@ -151,9 +152,8 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd -t d . $HOME"
 
 alias nvc='cd ~/.config/nvim/; nvim .'
-
-alias nnvim='~/.local/share/bob/nightly/nvim-linux64/bin/nvim'
-alias snvim='~/.local/share/bob/v0.10.0/nvim-linux64/bin/nvim'
+alias nd="nvim ."
+alias nvimdiff="nvim -d"
 
 function gi() {
   curl -sL https://www.toptal.com/developers/gitignore/api/$@;
@@ -172,3 +172,5 @@ alias tt=tt
 
 eval $(thefuck --alias)
 
+# vscode lingering processes
+alias killcode='pkill -f "vscode|Microsoft.VisualStudio.Code|csdevkit|dotnet" && echo "VS Code and C# Dev Kit neutralized."'
