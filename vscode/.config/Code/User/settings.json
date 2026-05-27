@@ -1,0 +1,165 @@
+{
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "block",
+  "editor.lineNumbers": "relative",
+  "editor.accessibilitySupport": "off",
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.localityBonus": true,
+  "editor.minimap.enabled": false,
+  "editor.suggest.preview": true,
+  "editor.renderWhitespace": "trailing",
+  "editor.acceptSuggestionOnCommitCharacter": false, // dumbass autocompletes on space!!!!
+  "disable-hardware-acceleration": true,
+  //
+  "window.zoomLevel": 1,
+  "window.menuBarVisibility": "compact",
+  "workbench.colorTheme": "Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.tree.indent": 16,
+  "workbench.editor.enablePreview": true,
+  "workbench.externalBrowser": "firefox-developer-edition",
+  "zenMode.hideLineNumbers": false,
+  //
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontLigatures.enabled": true,
+  //
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*",
+  },
+  "files.watcherExclude": {
+    "**/dist/**": true,
+    "**/node_modules/*/**": true,
+  },
+  //
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showExpandedAbbreviation": "never",
+  //
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "docker.lsp.telemetry": "off",
+  "dotnet-test-explorer.enableTelemetry": false,
+  //
+  "debug.allowBreakpointsEverywhere": true,
+  //
+  "search.collapseResults": "auto",
+  //
+  "codeium.aggressiveShutdown": true,
+  "codeium.enableCodeLens": false,
+  "codeium.enableCommandSideHintEducation": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.mcp.gallery.enabled": true,
+  //
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  //
+  "vim.leader": "space",
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.highlightedyank.enable": true,
+  "vim.foldfix": true,
+  "vim.surround": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"],
+    },
+    {
+      "before": ["<leader>", "s", "v"],
+      "commands": ["workbench.action.splitEditor"],
+    },
+    {
+      "before": ["<leader>", "space"],
+      "commands": ["workbench.action.quickOpen"],
+    },
+    {
+      "before": ["<leader>", "f", "b"],
+      "commands": ["workbench.action.showAllEditors"],
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.findInFiles"],
+    },
+    {
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.rename"],
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.autoFix"],
+    },
+    {
+      "before": ["<S-k>"],
+      "commands": ["editor.action.showHover"],
+    },
+    // {
+    //   "before": ["<leader>", "g", "g"],
+    //   "commands": ["workbench.view.scm"]
+    // }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["p"],
+      "after": ["P"],
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"],
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"],
+    },
+  ],
+  //
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  //
+  "git.blame.statusBarItem.enabled": true,
+  "git.confirmSync": false,
+  "git.detectWorktrees": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  //
+  "hexeditor.columnWidth": 16,
+  "hexeditor.showDecodedText": true,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  //
+  "settingsSync.keybindingsPerPlatform": false,
+  "terminal.integrated.enablePersistentSessions": false,
+  "chat.viewSessions.orientation": "stacked",
+  "csharp.debug.terminateChildProcesses": true,
+  "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
+  "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.podmancompose",
+  //
+}
