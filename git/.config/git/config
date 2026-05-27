@@ -15,10 +15,6 @@
 [init]
 	defaultBranch = master
 
-[advice]
-  addEmptyPathspec = false
-  statusHints = false
-
 [blame]
   coloring = highlightRecent
   date = relative
@@ -37,7 +33,6 @@
 
 [status]
   branch = true
-  short = true
   showStash = true
   showUntrackedFiles = all
 
@@ -52,7 +47,6 @@
   autoSetupRemote = true
   default = current
   followTags = true
-  gpgSign = false
 
 [pull]
   rebase = true

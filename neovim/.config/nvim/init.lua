@@ -2,6 +2,6 @@
 require("config.lazy")
 
 if vim.g.neovide then
-  vim.o.guifont = "FiraCode Nerd Font Mono:h18"
+  vim.o.guifont = "FiraCode Nerd Font Mono:h16"
   vim.g.neovide_cursor_vfx_mode = "pixiedust"
 end
