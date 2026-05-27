@@ -16,8 +16,7 @@ Create a directory that mirrors `$HOME`, then test with stow:
 
 ```bash
 mkdir -p btop/.config/btop          # example: btop config
-cp ~/.config/btop/btop.conf btop/.config/btop/
-stow --adopt -d ~/dotfiles -t ~/ btop
+stow --adopt btop
 ```
 
 `--adopt` overwrites the repo copy with existing local files (review with `git diff`).
@@ -30,14 +29,6 @@ stow:
   - btop
   - emacs
   ...
-```
-
-Re-run the playbook or stow manually:
-
-```bash
-ansible-playbook ansible/setup.yml --ask-become-pass
-# or
-stow -d ~/dotfiles -t ~/ btop
 ```
 
 If the tool needs system packages, add them to `ansible/vars/packages.yml`. For packages not managed by Ansible (e.g. `ideavim`), just stow manually.

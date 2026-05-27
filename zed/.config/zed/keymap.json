@@ -1,0 +1,61 @@
+[
+  {
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+      "alt-e": "workspace::ToggleLeftDock",
+    },
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "Q": null,
+      "q q": null,
+      "f1": null,
+      "d": ["vim::Delete", { "register": "_" }],
+      "p": ["vim::Paste", { "preserve_clipboard": true }],
+      // "f2": ["vim::PushOperator", "q q"],
+      // "f3": ["vim::PushOperator", "q"],
+      // "f4": ["vim::PushOperator", "@ q"],
+      "space space": "file_finder::Toggle",
+      "space e": "workspace::ToggleRightDock",
+      "space s v": "pane::SplitRight",
+      "space f b": "tab_switcher::Toggle",
+      "space f s": "pane::DeploySearch",
+      "space c r": "editor::Rename",
+      "space c a": "editor::ToggleCodeActions",
+      "shift-k": "editor::Hover",
+      "space g g": "workspace::ToggleRightDock",
+      "] d": "editor::GoToDiagnostic",
+      "[ d": "editor::GoToPreviousDiagnostic",
+      "] e": "editor::GoToDiagnostic",
+      "[ e": "editor::GoToPreviousDiagnostic",
+    },
+  },
+  {
+    "context": "VimVisual && !menu",
+    "bindings": {
+      ">": "editor::Indent",
+      "<": "editor::Outdent",
+    },
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-a": "editor::MoveToBeginningOfLine",
+      "ctrl-e": "editor::MoveToEndOfLine",
+      "ctrl-b": "editor::MoveLeft",
+      "ctrl-f": "editor::MoveRight",
+      "ctrl-d": "editor::Delete",
+    },
+  },
+]
