@@ -16,6 +16,7 @@
     "lazyvim.plugins.extras.lang.clangd",
     "lazyvim.plugins.extras.lang.cmake",
     "lazyvim.plugins.extras.lang.docker",
+    "lazyvim.plugins.extras.lang.dotnet",
     "lazyvim.plugins.extras.lang.elixir",
     "lazyvim.plugins.extras.lang.git",
     "lazyvim.plugins.extras.lang.go",
@@ -31,7 +32,6 @@
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.lsp.neoconf",
-    "lazyvim.plugins.extras.lsp.none-ls",
     "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.util.project",
@@ -43,4 +43,3 @@
   },
   "version": 8
 }
-
