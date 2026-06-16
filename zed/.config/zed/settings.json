@@ -117,7 +117,7 @@
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1",
+      "model": "claude-haiku-4.5",
       "enable_thinking": true,
     },
     "favorite_models": [],

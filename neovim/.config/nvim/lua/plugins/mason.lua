@@ -15,7 +15,7 @@ return {
         -- formatting
         "prettier",
         -- code spell
-        "cspell",
+        -- "cspell",
       },
     },
   },

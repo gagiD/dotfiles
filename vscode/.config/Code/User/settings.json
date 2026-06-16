@@ -46,11 +46,14 @@
     "*.sqlite3": "${capture}.${extname}-*",
     "*.db3": "${capture}.${extname}-*",
     "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
   },
   "files.watcherExclude": {
     "**/dist/**": true,
     "**/node_modules/*/**": true,
+    "**/bin/**": true,
+    "**/obj/**": true,
+    "**/.git/objects/**": true
   },
   //
   "emmet.triggerExpansionOnTab": true,
@@ -69,7 +72,6 @@
   "codeium.enableCodeLens": false,
   "codeium.enableCommandSideHintEducation": false,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "chat.mcp.gallery.enabled": true,
   //
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -88,36 +90,36 @@
   "vim.normalModeKeyBindings": [
     {
       "before": ["<leader>", "e"],
-      "commands": ["workbench.action.toggleSidebarVisibility"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     {
       "before": ["<leader>", "s", "v"],
-      "commands": ["workbench.action.splitEditor"],
+      "commands": ["workbench.action.splitEditor"]
     },
     {
       "before": ["<leader>", "space"],
-      "commands": ["workbench.action.quickOpen"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
       "before": ["<leader>", "f", "b"],
-      "commands": ["workbench.action.showAllEditors"],
+      "commands": ["workbench.action.showAllEditors"]
     },
     {
       "before": ["<leader>", "f", "s"],
-      "commands": ["workbench.action.findInFiles"],
+      "commands": ["workbench.action.findInFiles"]
     },
     {
       "before": ["<leader>", "c", "r"],
-      "commands": ["editor.action.rename"],
+      "commands": ["editor.action.rename"]
     },
     {
       "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.autoFix"],
+      "commands": ["editor.action.autoFix"]
     },
     {
       "before": ["<S-k>"],
-      "commands": ["editor.action.showHover"],
-    },
+      "commands": ["editor.action.showHover"]
+    }
     // {
     //   "before": ["<leader>", "g", "g"],
     //   "commands": ["workbench.view.scm"]
@@ -126,23 +128,23 @@
   "vim.visualModeKeyBindings": [
     {
       "before": ["p"],
-      "after": ["P"],
+      "after": ["P"]
     },
     {
       "before": [">"],
-      "commands": ["editor.action.indentLines"],
+      "commands": ["editor.action.indentLines"]
     },
     {
       "before": ["<"],
-      "commands": ["editor.action.outdentLines"],
-    },
+      "commands": ["editor.action.outdentLines"]
+    }
   ],
   //
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   //
   "git.blame.statusBarItem.enabled": true,
@@ -157,9 +159,12 @@
   //
   "settingsSync.keybindingsPerPlatform": false,
   "terminal.integrated.enablePersistentSessions": false,
-  "chat.viewSessions.orientation": "stacked",
   "csharp.debug.terminateChildProcesses": true,
   "containers.containerClient": "com.microsoft.visualstudio.containers.podman",
   "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.podmancompose",
+  "chat.viewSessions.orientation": "stacked",
+  "chat.mcp.assisted.nuget.enabled": false,
+  "todo-tree.ripgrep.ripgrep": "/usr/bin/rg"
   //
 }
+
