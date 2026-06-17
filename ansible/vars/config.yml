@@ -6,5 +6,5 @@ stow:
   - neovim
   - shell
   - systemd
-  - xdg
+  #- xdg
   - zed

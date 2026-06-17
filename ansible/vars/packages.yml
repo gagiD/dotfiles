@@ -50,7 +50,7 @@ packages:
     - yt-dlp
 
     # Code
-    - visual-studio-code-bin
+    # - visual-studio-code-bin
 
     # KDE
     - konsole

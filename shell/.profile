@@ -111,8 +111,15 @@ export MY_CACHE_HOME="$HOME/.cache"
 export MY_DATA_HOME="$HOME/.local/share"
 export MY_STATE_HOME="$HOME/.local/state"
 
-export NVM_DIR="$MY_DATA_HOME"/nvm
-source /usr/share/nvm/init-nvm.sh
+# node version setup
+export NVM_DIR="$MY_DATA_HOME/nvm"
+if command -v fnm &> /dev/null; then
+    eval "$(fnm env --use-on-cd)"
+else
+    if [ -f /usr/share/nvm/init-nvm.sh ]; then
+        source /usr/share/nvm/init-nvm.sh
+    fi
+fi
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
