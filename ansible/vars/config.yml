@@ -7,4 +7,5 @@ stow:
   - shell
   - systemd
   #- xdg
+  - vscode
   - zed
