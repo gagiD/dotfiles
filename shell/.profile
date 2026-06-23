@@ -106,6 +106,12 @@ alias rmf='rm -rf'
 # stupid but required
 alias sudo='sudo '
 
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+
 export MY_CONFIG_HOME="$HOME/.config"
 export MY_CACHE_HOME="$HOME/.cache"
 export MY_DATA_HOME="$HOME/.local/share"
