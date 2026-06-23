@@ -1,5 +1,6 @@
 source ~/.profile
 
+export HISTFILE="${XDG_STATE_HOME}"/bash/history
 HISTIGNORE=' *:&:?:??:clear:history:exit:cd*:ls*:[ \t]*'
 
 # fzf

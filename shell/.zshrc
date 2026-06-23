@@ -5,6 +5,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+
 # zinit manual
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
@@ -32,7 +34,7 @@ source ~/.profile
 
 # history
 HISTSIZE=5000
-HISTFILE=~/.local/state/shell_history
+HISTFILE="${XDG_STATE_HOME}"/zsh/history
 HISTORY_IGNORE='(?|??|c|clear|history|exit|cd*|ls*)'
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
